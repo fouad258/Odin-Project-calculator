@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    height: 100vh;
+}
+
+.btn{
+    height: 75 px;
+    width: 45px;
+}
+
+#id{
+    align-items: center;
+    justify-content: center;
+    padding: 20 px;
+    margin: 20 px;
+
+}
