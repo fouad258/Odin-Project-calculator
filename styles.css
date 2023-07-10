@@ -1,5 +1,10 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto)
+}
 body{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -7,10 +12,30 @@ body{
     height: 100vh;
 }
 
-.btn{
-    height: 75 px;
-    width: 45px;
+    
+.display{
+    grid-column: 1 / -1;
+    background-color: #b2b9b7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 5.5em;
+    font-weight: initial;
+    text-shadow: 1.3px 1.3px #383838;
+    margin: 5px;
 }
+
+.btn{
+    margin: 1px;
+    border-radius: 15%;
+    border: 10px;
+    font-weight: initial;
+    font-size: 2em;
+}
+
+
 
 #id{
     align-items: center;
@@ -18,4 +43,17 @@ body{
     padding: 20 px;
     margin: 20 px;
 
+}
+
+rid-column: 1 / -1;
+background-color: #b2b9b7;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: flex-end;
+padding: 5px;
+font-size: 5.5em;
+font-weight: initial;
+text-shadow: 1.3px 1.3px #383838;
+margin: 5px;
 }

@@ -11,28 +11,28 @@
 <body>
   <main id="ugi" >
     <h2>OP Calculator</h2>
-    <input type="text" id="result" placeholder="0" readonly>
-     <div class="buttons">
-      <button class="btn btn-outline-dark" onclick="addToDisplay('0')" data-key="48">0</button>
-      <button class="btn btn-outline-dark" onclick="addToDisplay('1')" data-key="49">1</button>
-      <button class="btn btn-outline-dark" onclick="addToDisplay('2')" data-key="50">2</button>
-      <button class="btn btn-outline-dark" onclick="addToDisplay('3')" data-key="51">3</button>
-      <button class="btn btn-outline-dark" onclick="addToDisplay('4')" data-key="52">4</button>
-      <button class="btn btn-outline-dark" onclick="addToDisplay('5')" data-key="53">5</button>
-      <button class="btn btn-outline-dark" onclick="addToDisplay('6')" data-key="54">6</button>
+    <div id="container">
+      <input type="text" id="result" class="display" placeholder="0" readonly>
+      <button class="btn btn-outline-danger" onclick="clearDisplay()" data-key="8">AC</button>
       <button class="btn btn-outline-dark" onclick="addToDisplay('7')" data-key="55">7</button>
       <button class="btn btn-outline-dark" onclick="addToDisplay('8')" data-key="56">8</button>
       <button class="btn btn-outline-dark" onclick="addToDisplay('9')" data-key="57">9</button>
-      <button class="btn btn-outline-dark" onclick="addToDisplay('/')" data-key="68">/</button>
-      <button class="btn btn-outline-dark" onclick="addToDisplay('*')" data-key="88">*</button>
-      <button class="btn btn-outline-dark" onclick="addToDisplay('-')" data-key="173">-</button>
-      <button class="btn btn-outline-dark" onclick="addToDisplay('+')" data-key="61">+</button>
-      <button class="btn btn-outline-dark" onclick="addToDisplay('.')" data-key="190">.</button>
-      <button class="btn btn-outline-dark" onclick="calculate()" data-key="69">=</button>
-      <button class="btn btn-outline-dark" onclick="clearDisplay()" data-key="8">AC</button> 
-     </div>   
-     <script src="index.js"></script>   
-  <main>
+      <button class="btn btn-outline-success" onclick="addToDisplay('*')" data-key="88">*</button>
+      <button class="btn btn-outline-dark" onclick="addToDisplay('4')" data-key="52">4</button>
+      <button class="btn btn-outline-dark" onclick="addToDisplay('5')" data-key="53">5</button>
+      <button class="btn btn-outline-dark" onclick="addToDisplay('6')" data-key="54">6</button>
+      <button class="btn btn-outline-danger" onclick="addToDisplay('-')" data-key="173">-</button>
+      <button class="btn btn-outline-dark" onclick="addToDisplay('1')" data-key="49">1</button>
+      <button class="btn btn-outline-dark" onclick="addToDisplay('2')" data-key="50">2</button>
+      <button class="btn btn-outline-dark" onclick="addToDisplay('3')" data-key="51">3</button>
+      <button class="btn btn-outline-success" onclick="addToDisplay('+')" data-key="61">+</button>
+      <button class="btn btn-outline-dark" onclick="addToDisplay('0')" data-key="48">0</button>
+      <button class="btn btn-outline-warning" onclick="addToDisplay('.')" data-key="190">.</button>
+      <button class="btn btn-outline-success" onclick="addToDisplay('/')" data-key="68">/</button>
+      <button class="btn btn-outline-info" onclick="calculate()" data-key="69">=</button>
+    </div>    
+  </main>
+  <script src="index.js"></script>
 </body>
 </html>
 
